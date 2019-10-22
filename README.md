@@ -53,28 +53,30 @@ mvn spring-boot:run
 
 ### Create Address Book Entry ###
 
+```
 curl -vvv  -d '{"firstName":"Bob", "lastName":"Builder", "pnoneNumber":"083 439 6070", "address":"Dundalk, Co. Louth", "emailAddress":"bob@yapstone.ie"}' -H "Content-Type: application/json" -X POST 'http://localhost:8080/api/v1/addressbooks'
+```
 
 ### Update Address Book Entry ###
-
+```
 curl -vvv  -d '{"firstName":"Bob", "lastName":"Builder 2 ", "pnoneNumber":"083 439 6070", "address":"Dundalk, Co. Louth", "emailAddress":"bob@yapstone.ie"}' -H "Content-Type: application/json" -X PUT 'http://localhost:8080/api/v1/addressbooks/5daf51bda1ff575cbf8273ce'
-
+```
 ### Get Address Book Entry by Id ###
-
+```
 curl -vvv  'http://localhost:8080/api/v1/addressbooks/5daf51bda1ff575cbf8273ce'
-
+```
 
 ### Get All Address Book Entries ###
-
+```
 curl -vvv  'http://localhost:8080/api/v1/addressbooks'
-
+```
 ### Delete Address Book Entry ###
-
+```
 curl -vvv -X DELETE 'http://localhost:8080/api/v1/addressbooks/5daf51bda1ff575cbf8273ce'
+```
 
 
-
-## Mongo Db quick reference guide ##
+## Mongo quick reference guide ##
 
 https://docs.mongodb.com/manual/reference/mongo-shell/
 
