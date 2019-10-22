@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: yapstone
+      
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.yapstone.demo: DEBUG
